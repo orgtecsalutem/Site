@@ -1,0 +1,21 @@
+body,
+input,
+textarea,
+button {
+  @include font-source(
+    $font-family-base,
+    $font-size-base,
+    $black,
+    $font-weight-base
+  );
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: $font-weight-headings;
+}

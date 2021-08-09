@@ -1,0 +1,29 @@
+$font-family-base: "Open Sans", Arial, sans-serif;
+$font-weight-base: 400;
+$font-size-base: 1rem;
+$font-weight-headings: 600;
+
+$black: #000000;
+$white: #ffffff;
+$red: #db1f1d;
+$gray-200: #c2cbc7;
+$gray-400: #959d99;
+
+$breakpoints: (
+  "phone": 400px,
+  "phone-wide": 480px,
+  "phablet": 560px,
+  "tablet-small": 640px,
+  "tablet": 768px,
+  "tablet-wide": 1024px,
+  "desktop": 1248px,
+  "desktop-wide": 1440px,
+);
+
+$img-path: "../../assets/images";
+
+$z-indexes: (
+  "low": 10,
+  "mid": 100,
+  "high": 1000,
+);

@@ -1,0 +1,14 @@
+.container {
+  display: flex;
+
+  main {
+    width: calc(100vw - 15rem);
+    padding: 2rem;
+
+    header {
+      p {
+        margin-top: 0.5rem;
+      }
+    }
+  }
+}

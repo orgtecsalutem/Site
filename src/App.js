@@ -1,23 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import { Navbar } from "./components/Navbar";
+import { Sidebar } from "./components/Sidebar";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <div className="container">
+        <Sidebar />
+        <main>
+          <header>
+            <h1>Página inicial</h1>
+            <h2>Seja bem-vindo(a) ao wiki da Techsa!</h2>
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+              expedita odio dignissimos quisquam harum suscipit labore explicabo
+              architecto quos. In.
+            </p>
+          </header>
+        </main>
+      </div>
     </div>
   );
 }
