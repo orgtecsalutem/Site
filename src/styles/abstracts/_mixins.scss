@@ -3,11 +3,11 @@
   height: $height;
 }
 
-@mixin flex($direction, $justify) {
+@mixin flex($direction, $align, $justify) {
   display: flex;
-  align-items: center;
-  justify-content: $justify;
   flex-direction: $direction;
+  align-items: $align;
+  justify-content: $justify;
 }
 
 @mixin font-source(

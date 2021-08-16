@@ -3,11 +3,18 @@
 
   main {
     width: calc(100vw - 15rem);
+    height: calc(100vh - 4.5rem);
     padding: 2rem;
+    overflow: scroll;
+    overflow-x: hidden;
 
     header {
-      p {
+      h1 ~ * {
         margin-top: 0.5rem;
+      }
+
+      .subtopic {
+        margin: 1rem 0;
       }
     }
   }

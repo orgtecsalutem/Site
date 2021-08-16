@@ -1,27 +1,32 @@
+@use "sass:map";
+
 .main-nav {
+  @include flex(row, center, space-between);
+
   height: 4.5rem;
   width: 100vw;
-
   background-color: $red;
   color: $white;
-
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
   padding: 0 2rem;
 
-  h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .logo {
+    a {
+      @include flex(row, center, center);
+    }
 
     img {
       height: 4rem;
+      transform: scale(0.9);
+
+      transition: all ease 0.3s;
+
+      &:hover {
+        transform: scale(1);
+      }
     }
   }
 
-  ul {
+  .nav-ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -34,12 +39,21 @@
         border: none;
         background-color: $white;
         padding: 0.5rem 1rem;
+        width: 12rem;
         border-radius: 5px;
 
-        transition: 0.3s;
+        transition: all ease 0.5s;
 
         a {
+          @include flex(row, center, space-between);
           text-decoration: none;
+
+          svg {
+            margin-top: 0.1rem;
+            font-size: 1.2rem;
+
+            transition: 0.5s;
+          }
 
           &:hover {
             text-decoration: none;
@@ -47,8 +61,90 @@
         }
 
         &:hover {
-          filter: brightness(120%);
-          border-radius: 0;
+          background: $black;
+          color: $white;
+          width: 12.5rem;
+
+          a {
+            svg {
+              font-size: 1.3rem;
+              animation: float-right 0.5s infinite;
+            }
+          }
+        }
+      }
+    }
+
+    .contact {
+      position: relative;
+
+      a {
+        @include flex(row, center, center);
+
+        &:hover {
+          text-decoration: none;
+        }
+
+        svg {
+          margin-left: 0.3rem;
+        }
+      }
+    }
+
+    .social {
+      @include flex(column, center, center);
+      background: $black;
+      border-radius: 8px;
+
+      list-style: none;
+      position: absolute;
+      z-index: map.get($z-indexes, "high");
+
+      top: 2rem;
+      left: -1.25rem;
+
+      padding: 0.5rem;
+
+      visibility: hidden;
+
+      &.visible {
+        visibility: visible;
+      }
+
+      &::after {
+        content: "";
+        width: 10px;
+        height: 10px;
+        background-color: $black;
+        position: absolute;
+        top: -3px;
+        transform: rotate(45deg);
+      }
+
+      li {
+        @include flex(column, center, center);
+
+        width: 100%;
+        font-size: 0.9rem;
+        margin: 0.25rem;
+        padding: 0;
+
+        transition: all ease 0.3s;
+
+        a {
+          @include flex(row, center, center);
+
+          svg {
+            margin-right: 0.5rem;
+          }
+
+          &:hover {
+            text-decoration: none;
+          }
+        }
+
+        &:hover {
+          color: $red;
         }
       }
     }
