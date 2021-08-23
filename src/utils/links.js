@@ -1,6 +1,10 @@
 export const navLinks = [
   {
     path: "/",
+    name: "Início",
+  },
+  {
+    path: "/",
     name: "Sobre",
   },
   {
@@ -10,10 +14,6 @@ export const navLinks = [
   {
     path: "/",
     name: "Programas",
-  },
-  {
-    path: "/",
-    name: "Integração",
   },
   {
     path: "/",
