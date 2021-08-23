@@ -1,10 +1,22 @@
 export const navLinks = [
   {
     path: "/",
-    name: "Link1",
+    name: "Início",
   },
   {
-    route: "/",
-    name: "Link2",
+    path: "/",
+    name: "Sobre",
+  },
+  {
+    path: "/",
+    name: "Wiki",
+  },
+  {
+    path: "/",
+    name: "Programas",
+  },
+  {
+    path: "/",
+    name: "Publicações",
   },
 ];

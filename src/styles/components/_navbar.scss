@@ -39,7 +39,7 @@
         border: none;
         background-color: $white;
         padding: 0.5rem 1rem;
-        width: 12rem;
+        width: 105%;
         border-radius: 5px;
 
         transition: all ease 0.5s;
@@ -63,7 +63,7 @@
         &:hover {
           background: $black;
           color: $white;
-          width: 12.5rem;
+          width: 110%;
 
           a {
             svg {
@@ -164,7 +164,7 @@
     font-size: 2.5rem;
   }
 
-  @media (max-width: 600px) {
+  @media (max-width: 800px) {
     position: relative;
 
     .hamburger {
@@ -175,13 +175,15 @@
       display: none;
       position: absolute;
       background: $red;
-      bottom: -218px;
+      top: 4.5rem;
       left: 0;
       width: 100%;
+      height: calc(100vh - 4.5rem);
 
       z-index: map.get($z-indexes, "high");
 
       flex-direction: column;
+      justify-content: start;
 
       .join {
         margin-bottom: 2rem;

@@ -1,5 +1,5 @@
 .sidebar {
-  width: 23rem;
+  width: 20rem;
   height: calc(100vh - 4.5rem);
   padding: 1rem;
   background-color: lighten($gray-200, 10%);
@@ -120,7 +120,7 @@
       position: absolute;
       display: block;
       width: calc(100vw - 1.5rem);
-      max-width: 23rem;
+      max-width: 20rem;
       transition: margin-left 1s;
     }
   }
@@ -154,7 +154,7 @@
   }
 
   &.open {
-    left: 23rem;
+    left: 20rem;
 
     @media (max-width: 400px) {
       left: auto;

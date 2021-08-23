@@ -14,7 +14,7 @@ function App() {
           return (
             <Page title="home">
               <h1>Página inicial</h1>
-              <h2>Seja bem-vindo(a) ao wiki da Techsa!</h2>
+              <h2>Seja bem-vindo(a) à Techsa!</h2>
               <p>
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam
                 expedita odio dignissimos quisquam harum suscipit labore

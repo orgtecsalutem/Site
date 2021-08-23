@@ -12,7 +12,7 @@ import logo from "../assets/images/logo.png";
 
 export function Navbar() {
   const [isDropdown, setIsDropdown] = useState(false);
-  const [isActive, setIsActive] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
   function setIsDropdownTrue() {
     setIsDropdown(true);
@@ -22,8 +22,8 @@ export function Navbar() {
     setIsDropdown(false);
   }
 
-  function handleIsActive() {
-    isActive ? setIsActive(false) : setIsActive(true);
+  function handleIsOpen() {
+    isOpen ? setIsOpen(false) : setIsOpen(true);
   }
 
   const social = [
@@ -52,7 +52,7 @@ export function Navbar() {
         </Link>
       </h1>
 
-      <ul className={`nav-ul ${isActive && "active"}`}>
+      <ul className={`nav-ul ${isOpen && "active"}`}>
         {navLinks.map((item, index) => {
           return (
             <li key={index}>
@@ -91,14 +91,14 @@ export function Navbar() {
         <li className="join">
           <button className="join-button">
             <Link to="/">
-              <span>Participe conosco</span>
+              <span>Integrar-se</span>
               <BsArrowRightShort />
             </Link>
           </button>
         </li>
       </ul>
 
-      <HiMenuAlt2 className="hamburger" onClick={handleIsActive} />
+      <HiMenuAlt2 className="hamburger" onClick={handleIsOpen} />
     </nav>
   );
 }
