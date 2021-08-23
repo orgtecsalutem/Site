@@ -2,9 +2,9 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 import { BsArrowRightShort } from "react-icons/bs";
-
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
+import { HiMenuAlt2 } from "react-icons/hi";
 
 import { navLinks } from "../utils/links";
 
@@ -12,6 +12,7 @@ import logo from "../assets/images/logo.png";
 
 export function Navbar() {
   const [isDropdown, setIsDropdown] = useState(false);
+  const [isActive, setIsActive] = useState(false);
 
   function setIsDropdownTrue() {
     setIsDropdown(true);
@@ -19,6 +20,10 @@ export function Navbar() {
 
   function setIsDropdownFalse() {
     setIsDropdown(false);
+  }
+
+  function handleIsActive() {
+    isActive ? setIsActive(false) : setIsActive(true);
   }
 
   const social = [
@@ -47,7 +52,7 @@ export function Navbar() {
         </Link>
       </h1>
 
-      <ul className="nav-ul">
+      <ul className={`nav-ul ${isActive && "active"}`}>
         {navLinks.map((item, index) => {
           return (
             <li key={index}>
@@ -92,6 +97,8 @@ export function Navbar() {
           </button>
         </li>
       </ul>
+
+      <HiMenuAlt2 className="hamburger" onClick={handleIsActive} />
     </nav>
   );
 }

@@ -157,4 +157,53 @@
       }
     }
   }
+
+  .hamburger {
+    display: none;
+
+    font-size: 2.5rem;
+  }
+
+  @media (max-width: 600px) {
+    position: relative;
+
+    .hamburger {
+      display: block;
+    }
+
+    .nav-ul {
+      display: none;
+      position: absolute;
+      background: $red;
+      bottom: -218px;
+      left: 0;
+      width: 100%;
+
+      z-index: map.get($z-indexes, "high");
+
+      flex-direction: column;
+
+      .join {
+        margin-bottom: 2rem;
+      }
+
+      .contact {
+        svg {
+          display: none;
+        }
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .social {
+        display: none;
+      }
+
+      &.active {
+        display: flex;
+      }
+    }
+  }
 }

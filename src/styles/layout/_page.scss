@@ -5,7 +5,6 @@
     width: calc(100vw - 15rem);
     height: calc(100vh - 4.5rem);
     padding: 2rem;
-    overflow: scroll;
     overflow-x: hidden;
 
     header {
@@ -16,6 +15,15 @@
       .subtopic {
         margin: 1rem 0;
       }
+    }
+
+    @media (max-width: 950px) {
+      width: 100vw;
+    }
+
+    @media (max-width: 600px) {
+      text-align: center;
+      padding: 2rem 1rem;
     }
   }
 }
