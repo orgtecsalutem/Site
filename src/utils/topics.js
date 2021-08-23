@@ -1,7 +1,7 @@
 export const topics = [
   {
     slug: "/complexo-economico-industrial",
-    title: "Complexo econômico-industrial",
+    title: "Da Entidade",
     description: "Lorem ipsum dolor sit amet",
     subtopics: [
       {
