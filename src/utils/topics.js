@@ -1,14 +1,9 @@
 export const topics = [
   {
-    slug: "/entidade",
-    title: "Da Entidade",
+    slug: "/institucional",
+    title: "Institucional",
     description: "Lorem ipsum dolor sit amet",
     subtopics: [
-      {
-        slug: "/estatuto",
-        title: "Estatuto",
-        description: "Lorem ipsum dolor sit amet",
-      },
       {
         slug: "/manual-de-fundação",
         title: "Manual de Fundação",
@@ -22,8 +17,8 @@ export const topics = [
     ],
   },
   {
-    slug: "/integracao",
-    title: "Da Integração",
+    slug: "/documentacao",
+    title: "Documentação",
     description: "Lorem ipsum dolor sit amet",
   },
 ];
