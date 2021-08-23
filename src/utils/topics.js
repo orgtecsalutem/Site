@@ -1,29 +1,29 @@
 export const topics = [
   {
-    slug: "/complexo-economico-industrial",
+    slug: "/entidade",
     title: "Da Entidade",
     description: "Lorem ipsum dolor sit amet",
     subtopics: [
       {
-        slug: "/base-quimica-e-biotecnologia",
-        title: "De base química e biotecnologia",
+        slug: "/estatuto",
+        title: "Estatuto",
         description: "Lorem ipsum dolor sit amet",
       },
       {
-        slug: "/base-mecanica-eletronica-e-materiais",
-        title: "De base mecânica, eletrônica e de materiais",
+        slug: "/manual-de-fundação",
+        title: "Manual de Fundação",
         description: "Lorem ipsum dolor sit amet",
       },
       {
-        slug: "/base-digital-e-informacional",
-        title: "De base digital e informacional",
+        slug: "/perguntas-frequentes",
+        title: "Perguntas Frequentes",
         description: "Lorem ipsum dolor sit amet",
       },
     ],
   },
   {
-    slug: "/etapas-de-fundacao",
-    title: "Etapas de fundação",
+    slug: "/integracao",
+    title: "Da Integração",
     description: "Lorem ipsum dolor sit amet",
   },
 ];
