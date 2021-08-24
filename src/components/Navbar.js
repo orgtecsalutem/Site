@@ -71,7 +71,7 @@ export function Navbar() {
             target="_blank"
             rel="noreferrer"
           >
-            <span>Contato</span>
+            <span>CONTATO</span>
             {isDropdown ? <IoIosArrowUp /> : <IoIosArrowDown />}
           </a>
           <ul className={`social ${isDropdown && "visible"}`}>
@@ -91,7 +91,7 @@ export function Navbar() {
         <li className="join">
           <button className="join-button">
             <Link to="/">
-              <span>Integrar-se</span>
+              <span>INTEGRAR-SE</span>
               <BsArrowRightShort />
             </Link>
           </button>
