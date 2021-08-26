@@ -44,7 +44,8 @@ export function Footer() {
         </section>
       </div>
       <div className="copyright">
-        2021 | Organizationem Technologia Salutem. Todos os direitos reservados.
+        &copy; 2021 | Organizationem Technologia Salutem. Todos os direitos
+        reservados.
       </div>
     </footer>
   );
