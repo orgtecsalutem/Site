@@ -4,6 +4,9 @@
   padding: 1rem;
   background-color: lighten($gray-200, 10%);
   font-size: 0.95rem;
+  display: none;
+  margin-left: -50rem;
+  transition: margin-left 1s;
 
   h3 {
     position: relative;
@@ -110,24 +113,20 @@
     }
   }
 
-  @media (max-width: 950px) {
-    display: none;
-    margin-left: -50rem;
+  &.open {
+    margin-left: 0;
+    position: absolute;
+    display: block;
+    width: calc(100vw - 1.5rem);
+    max-width: 20rem;
     transition: margin-left 1s;
-
-    &.open {
-      margin-left: 0;
-      position: absolute;
-      display: block;
-      width: calc(100vw - 1.5rem);
-      max-width: 20rem;
-      transition: margin-left 1s;
-    }
   }
 }
 
 .open-sidebar {
-  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 1.5rem;
   height: calc(100vh - 4.5rem);
   background: #fff6;
@@ -137,12 +136,6 @@
     font-size: 1.5rem;
     opacity: 0.5;
     transition: 0.5s;
-  }
-
-  @media (max-width: 950px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
   &:hover {
