@@ -1,5 +1,6 @@
 import { Navbar } from "./Navbar";
 import { Sidebar } from "./Sidebar";
+import { Footer } from "./Footer";
 
 export function Page({ name, children }) {
   return (
@@ -11,6 +12,7 @@ export function Page({ name, children }) {
           <header>{children}</header>
         </main>
       </div>
+      <Footer />
     </div>
   );
 }

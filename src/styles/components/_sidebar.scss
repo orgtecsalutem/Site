@@ -8,6 +8,10 @@
   margin-left: -50rem;
   transition: margin-left 1s;
 
+  @media (max-width: 750px) {
+    position: absolute;
+  }
+
   h3 {
     position: relative;
     text-transform: uppercase;
@@ -115,7 +119,7 @@
 
   &.open {
     margin-left: 0;
-    position: absolute;
+    //position: absolute;
     display: block;
     width: calc(100vw - 1.5rem);
     max-width: 20rem;
@@ -130,7 +134,14 @@
   width: 1.5rem;
   height: calc(100vh - 4.5rem);
   background: #fff6;
-  position: absolute;
+
+  @media (max-width: 750px) {
+    position: absolute;
+
+    &.open {
+      left: 20rem;
+    }
+  }
 
   svg {
     font-size: 1.5rem;
@@ -145,13 +156,8 @@
       opacity: 1;
     }
   }
+}
 
-  &.open {
-    left: 20rem;
-
-    @media (max-width: 400px) {
-      left: auto;
-      right: 0;
-    }
-  }
+.sidebar-container {
+  display: flex;
 }

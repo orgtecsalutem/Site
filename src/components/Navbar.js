@@ -38,7 +38,7 @@ export function Navbar() {
         {navLinks.map((item, index) => {
           return (
             <li key={index}>
-              <Link to={item.route}>{item.name}</Link>
+              <Link to={item.path}>{item.name}</Link>
             </li>
           );
         })}
