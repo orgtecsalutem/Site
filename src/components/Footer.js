@@ -11,7 +11,9 @@ export function Footer() {
       <div className="footer-container">
         <section>
           <h1 className="logo">
-            <img src={logo} alt="Logo" />
+            <Link to="/">
+              <img src={logo} alt="Logo" />
+            </Link>
           </h1>
         </section>
         <section>
@@ -32,14 +34,16 @@ export function Footer() {
             {social.map((item, index) => {
               return (
                 <li>
-                  <Link to={item.url}>{item.name}</Link>
+                  <Link to={item.url}>{item.icon}</Link>
                 </li>
               );
             })}
           </ul>
         </section>
       </div>
-      <div className="copyright"></div>
+      <div className="copyright">
+        2021 | Organizationem Technologia Salutem. Todos os direitos reservados.
+      </div>
     </footer>
   );
 }
