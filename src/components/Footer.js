@@ -34,7 +34,9 @@ export function Footer() {
             {social.map((item, index) => {
               return (
                 <li>
-                  <Link to={item.url}>{item.icon}</Link>
+                  <a href={item.url} target="_blank" rel="noreferrer">
+                    {item.icon}
+                  </a>
                 </li>
               );
             })}
