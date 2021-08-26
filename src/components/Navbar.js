@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 
 import { BsArrowRightShort } from "react-icons/bs";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
-import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa";
 import { HiMenuAlt2 } from "react-icons/hi";
 
 import { navLinks } from "../utils/links";
+import { social } from "../utils/social";
 
 import logo from "../assets/images/logo.png";
 
@@ -25,24 +25,6 @@ export function Navbar() {
   function handleIsOpen() {
     isOpen ? setIsOpen(false) : setIsOpen(true);
   }
-
-  const social = [
-    {
-      url: "https://facebook.com/Techsa-110788137918970/",
-      name: "Facebook",
-      icon: <FaFacebook />,
-    },
-    {
-      url: "https://www.instagram.com/techsabrasil/",
-      name: "Instagram",
-      icon: <FaInstagram />,
-    },
-    {
-      url: "https://twitter.com/techsabrasil",
-      name: "Twitter",
-      icon: <FaTwitter />,
-    },
-  ];
 
   return (
     <nav className="main-nav">
