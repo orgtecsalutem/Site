@@ -9,6 +9,10 @@ export const navLinks = [
   },
   {
     path: "/",
+    name: "DESENVOLVIMENTO",
+  },
+  {
+    path: "/",
     name: "EXTENSÃO",
   },
 ];
