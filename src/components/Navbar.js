@@ -43,33 +43,6 @@ export function Navbar() {
           );
         })}
 
-        <li
-          className="contact"
-          onMouseOver={setIsDropdownTrue}
-          onMouseLeave={setIsDropdownFalse}
-        >
-          <a
-            href="https://linkfly.to/30805HhO689"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <span>Contato</span>
-            {isDropdown ? <IoIosArrowUp /> : <IoIosArrowDown />}
-          </a>
-          <ul className={`social ${isDropdown && "visible"}`}>
-            {social.map((item, index) => {
-              return (
-                <li key={index}>
-                  <a href={item.url} target="_blank" rel="noreferrer">
-                    {item.icon}
-                    <span>{item.name}</span>
-                  </a>
-                </li>
-              );
-            })}
-          </ul>
-        </li>
-
         <li className="join">
           <button className="join-button">
             <Link to="/">
