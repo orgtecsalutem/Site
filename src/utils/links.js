@@ -13,6 +13,10 @@ export const navLinks = [
   },
   {
     path: "/",
+    name: "Integração",
+  },
+  {
+    path: "/",
     name: "Cerca da OTS",
   },
 ];
