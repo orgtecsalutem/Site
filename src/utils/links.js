@@ -1,14 +1,18 @@
 export const navLinks = [
   {
     path: "/",
+    name: "Sobre",
+  },
+  {
+    path: "/",
     name: "Ensino",
   },
   {
     path: "/",
-    name: "Extensão",
+    name: "Pesquisa",
   },
   {
     path: "/",
-    name: "Pesquisa e Desenvolvimento",
+    name: "Unidades e Programas",
   },
 ];
