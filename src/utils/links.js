@@ -1,14 +1,14 @@
 export const navLinks = [
   {
     path: "/",
-    name: "ENSINO",
+    name: "Ensino",
   },
   {
     path: "/",
-    name: "EXTENSÃO",
+    name: "Extensão",
   },
   {
     path: "/",
-    name: "PESQUISA E DESENVOLVIMENTO",
+    name: "Pesquisa e Desenvolvimento",
   },
 ];
