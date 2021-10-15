@@ -53,7 +53,7 @@ export function Navbar() {
             target="_blank"
             rel="noreferrer"
           >
-            <span>CONTATO</span>
+            <span>Contato</span>
             {isDropdown ? <IoIosArrowUp /> : <IoIosArrowDown />}
           </a>
           <ul className={`social ${isDropdown && "visible"}`}>
