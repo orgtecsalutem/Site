@@ -1,10 +1,6 @@
 export const navLinks = [
   {
     path: "/",
-    name: "Sobre",
-  },
-  {
-    path: "/",
     name: "Ensino",
   },
   {
@@ -13,6 +9,10 @@ export const navLinks = [
   },
   {
     path: "/",
-    name: "Unidades e Programas",
+    name: "Inovação",
+  },
+  {
+    path: "/",
+    name: "Cerca da OTS",
   },
 ];
