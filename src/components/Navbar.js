@@ -46,7 +46,7 @@ export function Navbar() {
         <li className="join">
           <button className="join-button">
             <Link to="/">
-              <span>Integrar-se</span>
+              <span>Doar</span>
               <BsArrowRightShort />
             </Link>
           </button>
