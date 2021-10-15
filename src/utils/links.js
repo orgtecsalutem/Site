@@ -1,11 +1,7 @@
 export const navLinks = [
   {
     path: "/",
-    name: "ENSINO",
-  },
-  {
-    path: "/",
-    name: "PESQUISA",
+    name: "ENSINO E PESQUISA",
   },
   {
     path: "/",
